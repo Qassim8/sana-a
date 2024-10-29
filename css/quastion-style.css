@@ -1,0 +1,50 @@
+.faq{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.faq .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.faq .row{
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 8px 0px rgba(142, 142, 142, 0.138);
+}
+.faq .row div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq .row div h3{
+    font-size: 18px;
+    color: rgb(211, 203, 173);
+}
+@media(max-width: 767px){
+    .faq .row div h3{
+        font-size: 13px;
+    }
+}
+.faq .row div span{
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+.faq .row p{
+    font-size: 13px;
+    width: 100%;
+    margin-top: 8px;
+    padding: 5px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 5px;
+}
+@media(max-width: 767px){
+    .faq .row p{
+        font-size: 10px;
+    }
+}

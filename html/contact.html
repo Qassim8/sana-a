@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تواصل معنا</title>
+    <!-- Css Files -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact-style.css" />
+    <!-- import fontawesome lib -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- import google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body dir="rtl">
+    <!-----------------
+    Start Header-Navbar 
+    ------------------->
+    <header id="navbar">
+      <nav class="navbar-container container">
+        <a href="/" class="home-link">
+          <div class="navbar-logo"></div>
+          <h1>جامعة العين</h1>
+        </a>
+        <button
+          type="button"
+          id="navbar-toggle"
+          aria-controls="navbar-menu"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" aria-labelledby="navbar-toggle">
+          <ul class="navbar-links">
+            <li class="navbar-item">
+              <a class="navbar-link" href="../index.html">الرئيسية</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="about.html">من نحن</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="quastion.html">الاسئلة الشائعة</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link active" href="contact.html">تواصل معنا</a>
+            </li>
+
+            <a href="">
+              English
+              <i class="fa-solid fa-language"></i>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-----------------
+    End Header-Navbar 
+    ------------------->
+    <!-----------------
+    Start Contact Info
+    ------------------->
+    <div class="main-title">
+      <h2>معلومات التواصل</h2>
+    </div>
+    <section class="contact-info">
+      <div class="container">
+        <div class="boxs">
+          <div class="box">
+            <i class="fa-solid fa-location"></i>
+            <p>الامارات العربية المتحدة‘ امارة العين</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-phone"></i>
+            <p>الهاتف : 0551402525</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-message"></i>
+            <p>بريد الكتروني : alsanaa.aau@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------
+    End Contact Info
+    --------------->
+    <!----------------
+    Start Contact Form
+    ----------------->
+    <form>
+      <div class="container">
+        <div class="input-row">
+          <div>
+            <label for="name">الاسم</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input-controler"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">البريد الالكتروني</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input-controler"
+              required
+            />
+          </div>
+        </div>
+        <div class="input-row">
+          <div>
+            <label for="phone">رقم الهاتف</label>
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              class="input-controler"
+              required
+            />
+          </div>
+          <div>
+            <label for="location">العنوان</label>
+            <select name="location" id="location" class="input-controler">
+              <option value="ain">العين</option>
+              <option value="abudhabi">ابوظبي</option>
+              <option value="dubai">دبي</option>
+              <option value="sharjah">الشارقة</option>
+              <option value="ajman">عجمان</option>
+              <option value="fujerah">الفجيره</option>
+              <option value="raskhima">رأس الخيمه</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="feedback">حدثنا عن تجربتك</label>
+          <textarea name="feedback" id="feedback"></textarea>
+        </div>
+        <button type="button" id="submit" class="form-btn">ارسال</button>
+      </div>
+    </form>
+    <!--------------
+    End Contact Form
+    --------------->
+    <!-----------------
+    Start Footer
+    ------------------->
+    <footer>
+      <div class="container">
+        <div class="top">
+          <div class="info">
+            <h3>احصائيات الموقع</h3>
+            <div class="text">
+              <p>اخر تحديث للصفحة : 7/18/2022</p>
+              <p>اخر تحديث للموقع : 18/01/2024</p>
+              <p>عدد الزوار : 386698</p>
+            </div>
+          </div>
+          <div class="info">
+            <h3>روابط سريعة</h3>
+            <div class="text">
+              <ul class="footer-links">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="../html/about.html">من نحن؟</a></li>
+                <li><a href="../html/quastion.html">اسئلة شائعة</a></li>
+                <li><a href="../html/contact.html">تواصل معنا</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="info">
+            <h3>اتصل بنا</h3>
+            <div class="text">
+              <p><i class="fa-solid fa-location"></i>الموقع : العين</p>
+              <p><i class="fa-solid fa-phone"></i>الهاتف : 0551402525</p>
+              <p>
+                <i class="fa-solid fa-message"></i>البريد الالكتروني :
+                alsanaa.aau@gmail.com
+              </p>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        حقوق النشر &copy; 2024 كل الحقوق محفوظة لدى Aau.Home
+      </div>
+    </footer>
+    <!--------
+    End Footer 
+    --------->
+    <script src="../js/main.js"></script>
+    <!-- import fontawesome lib -->
+    <script src="../js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/emailjs-com.min.js"></script>
+    <script>
+      document.getElementById("submit").addEventListener("click", function () {
+        emailjs
+          .send("service_d29d1gm", "template_ke2jzns", {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            location: document.getElementById("location").value,
+            feedback: document.getElementById("feedback").value,
+          })
+          .then(
+            function (response) {
+              alert("Email sent successfully!");
+            },
+            function (error) {
+              alert("Error sending email: " + error);
+            }
+          );
+      });
+    </script>
+  </body>
+</html>

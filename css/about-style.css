@@ -1,0 +1,78 @@
+/*  -------------------------
+    Start About Info Section
+    ----------------------- */
+.about .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about .about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media(max-width: 767px){
+    .about .about-content{
+        flex-direction: column;
+    }
+}
+.about .about-content .about-text{
+    font-size: 18px;
+    width: 50%;
+}
+@media(max-width: 767px){
+    .about .about-content .about-text{
+        font-size: 13px;
+        width: 100%;
+    }
+}
+.about .about-content .about-images {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+@media(max-width: 767px){
+    .about .about-content .about-images{
+        width: 100%;
+    }
+}
+.about .about-content .img{
+    height: 130px;
+    width: 270px;
+}
+@media(max-width: 767px){
+    .about .about-content .img{
+        width: 100%;
+        height: 200px;
+    }
+}
+.about .about-content .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+/*  ----------------------
+    End About Info Section
+    -----------------------*/
+/*  --------------------
+Start Statistics Section
+------------------------ */
+.stats{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.stats .box{
+    padding-block: 25px !important;
+}
+.stats .box svg{
+    font-size: 25px;
+    color: rgb(201, 196, 169);
+}
+.stats .box p{
+    font-size: 60px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+/*  -------------------
+End Statistics Section
+----------------------- */
