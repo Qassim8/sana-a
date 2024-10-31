@@ -23,7 +23,7 @@
     ------------------->
     <header id="navbar">
       <nav class="navbar-container container">
-        <a href="/" class="home-link">
+        <a href="../index.html" class="home-link">
           <div class="navbar-logo"></div>
           <h1>جامعة العين</h1>
         </a>
@@ -202,11 +202,25 @@
     <!--------
     End Footer 
     --------->
-    <script src="../js/main.js"></script>
-    <!-- import fontawesome lib -->
-    <script src="../js/all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/emailjs-com.min.js"></script>
     <script>
+      const navbarToggler = navbar.querySelector("#navbar-toggle");
+      const navbarMenu = document.querySelector("#navbar-menu");
+      const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+      let isNavbarExpanded =
+        navbarToggler.getAttribute("aria-expanded") === "true";
+
+      const toggleNavbarVisibility = () => {
+        isNavbarExpanded = !isNavbarExpanded;
+        navbarToggler.setAttribute("aria-expanded", isNavbarExpanded);
+      };
+
+      navbarToggler.addEventListener("click", toggleNavbarVisibility);
+
+      navbarLinksContainer.addEventListener("click", (e) =>
+        e.stopPropagation()
+      );
+      navbarMenu.addEventListener("click", toggleNavbarVisibility);
+
       document.getElementById("submit").addEventListener("click", function () {
         emailjs
           .send("service_d29d1gm", "template_ke2jzns", {
@@ -226,5 +240,10 @@
           );
       });
     </script>
+    <script src="../js/main.js"></script>
+    <!-- import fontawesome lib -->
+    <script src="../js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/emailjs-com.min.js"></script>
+    
   </body>
 </html>
