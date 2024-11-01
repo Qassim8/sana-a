@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
   </head>
-  <body dir="rtl">
+  <body>
     <!-----------------
     Start Header-Navbar 
     ------------------->
@@ -54,10 +54,10 @@
               <a class="navbar-link" href="html/contact.html">تواصل معنا</a>
             </li>
 
-            <a href="">
-              English
+            <span class="translator">
+              <p>English</p>
               <i class="fa-solid fa-language"></i>
-            </a>
+            </span>
           </ul>
         </div>
       </nav>
@@ -103,6 +103,9 @@
     ------------------->
     <sectin class="landing-sections proverbs" id="proverbs">
       <div class="main-title">
+        <div class="img">
+          <img src="vecteezy_abstract-gradient-golden-background-brush-stroke-place-for_34056372.png" alt="" srcset="">
+        </div>
         <h2>اقوال الشيوخ</h2>
       </div>
       <div class="container">
@@ -155,6 +158,9 @@
     ------------------->
     <sectin class="landing-sections proverbs" id="proverbs">
       <div class="main-title">
+        <div class="img">
+          <img src="vecteezy_abstract-gradient-golden-background-brush-stroke-place-for_34056372.png" alt="" srcset="">
+        </div>
         <h2>امثال السنع</h2>
       </div>
       <div class="container">
@@ -207,6 +213,9 @@
     ------------------->
     <sectin class="landing-sections images" id="images">
       <div class="main-title">
+        <div class="img">
+          <img src="vecteezy_abstract-gradient-golden-background-brush-stroke-place-for_34056372.png" alt="" srcset="">
+        </div>
         <h2>مكتبة الصور</h2>
       </div>
       <div class="container">
@@ -337,6 +346,9 @@
     ------------------->
     <sectin class="landing-sections videos" id="videos">
       <div class="main-title">
+        <div class="img">
+          <img src="vecteezy_abstract-gradient-golden-background-brush-stroke-place-for_34056372.png" alt="" srcset="">
+        </div>
         <h2>مكتبة الفيديوهات</h2>
       </div>
       <div class="container">
@@ -510,20 +522,24 @@
             <h3>روابط سريعة</h3>
             <div class="text">
               <ul class="footer-links">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="html/about.html">من نحن؟</a></li>
-                <li><a href="html/quastion.html">اسئلة شائعة</a></li>
-                <li><a href="html/contact.html">تواصل معنا</a></li>
+                <li><a href="html/shikh.html">اقوال الشيوخ</a></li>
+                <li><a href="html/proverbs.html">امثال السنع</a></li>
+                <li><a href="html/images.html">مكتبة الصور</a></li>
+                <li><a href="html/videos.html">مكتبة الفيديوهات</a></li>
               </ul>
             </div>
           </div>
           <div class="info">
             <h3>اتصل بنا</h3>
             <div class="text">
-              <p><i class="fa-solid fa-location"></i>الموقع : العين</p>
-              <p><i class="fa-solid fa-phone"></i>الهاتف : 0551402525</p>
-              <p>
-                <i class="fa-solid fa-message"></i>البريد الالكتروني :
+              <p class="icons">
+                <i class="fa-solid fa-location icon"></i>الموقع : العين
+              </p>
+              <p class="icons">
+                <i class="fa-solid fa-phone icon"></i>الهاتف : 0551402525
+              </p>
+              <p class="icons">
+                <i class="fa-solid fa-message icon"></i>البريد الالكتروني :
                 alsanaa.aau@gmail.com
               </p>
             </div>
@@ -549,7 +565,6 @@
       const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
       let isNavbarExpanded =
         navbarToggler.getAttribute("aria-expanded") === "true";
-      console.log(isNavbarExpanded);
 
       const toggleNavbarVisibility = () => {
         isNavbarExpanded = !isNavbarExpanded;
@@ -567,7 +582,5 @@
     <script src="js/main.js"></script>
     <!-- import fontawesome lib -->
     <script src="js/all.min.js"></script>
-
-    <script></script>
   </body>
 </html>

@@ -1,0 +1,13 @@
+/* translation button */
+.navbar-links > span {
+  margin-left: 30px !important;
+}
+@media (max-width: 767px) {
+  .navbar-links > span {
+    margin-left: 0 !important;
+  }
+}
+/* footer links icon */
+footer .top .text svg {
+  margin-right: 5px;
+}

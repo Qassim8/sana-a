@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
   </head>
-  <body dir="rtl">
+  <body>
     <!-----------------
     Start Header-Navbar 
     ------------------->
@@ -53,10 +53,10 @@
               <a class="navbar-link active" href="contact.html">تواصل معنا</a>
             </li>
 
-            <a href="">
-              English
+            <span class="translator">
+              <p>English</p>
               <i class="fa-solid fa-language"></i>
-            </a>
+            </span>
           </ul>
         </div>
       </nav>
@@ -68,7 +68,14 @@
     Start Contact Info
     ------------------->
     <div class="main-title">
-      <h2>معلومات التواصل</h2>
+      <div class="img">
+        <img
+          src="../vecteezy_abstract-gradient-golden-background-brush-stroke-place-for_34056372.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <h2>التواصل</h2>
     </div>
     <section class="contact-info">
       <div class="container">
@@ -94,7 +101,7 @@
     <!----------------
     Start Contact Form
     ----------------->
-    <form>
+    <form id="submit">
       <div class="container">
         <div class="input-row">
           <div>
@@ -146,7 +153,7 @@
           <label for="feedback">حدثنا عن تجربتك</label>
           <textarea name="feedback" id="feedback"></textarea>
         </div>
-        <button type="button" id="submit" class="form-btn">ارسال</button>
+        <button type="submit" class="form-btn">ارسال</button>
       </div>
     </form>
     <!--------------
@@ -170,10 +177,10 @@
             <h3>روابط سريعة</h3>
             <div class="text">
               <ul class="footer-links">
-                <li><a href="../index.html">الرئيسية</a></li>
-                <li><a href="../html/about.html">من نحن؟</a></li>
-                <li><a href="../html/quastion.html">اسئلة شائعة</a></li>
-                <li><a href="../html/contact.html">تواصل معنا</a></li>
+                <li><a href="shikh.html">اقوال الشيوخ</a></li>
+                <li><a href="proverbs.html">امثال السنع</a></li>
+                <li><a href="images.html">مكتبة الصور</a></li>
+                <li><a href="videos.html">مكتبة الفيديوهات</a></li>
               </ul>
             </div>
           </div>
@@ -202,6 +209,13 @@
     <!--------
     End Footer 
     --------->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("iuuKghKV1sXoIh3nE");
+      })();
+
+    </script>
     <script>
       const navbarToggler = navbar.querySelector("#navbar-toggle");
       const navbarMenu = document.querySelector("#navbar-menu");
@@ -220,30 +234,10 @@
         e.stopPropagation()
       );
       navbarMenu.addEventListener("click", toggleNavbarVisibility);
-
-      document.getElementById("submit").addEventListener("click", function () {
-        emailjs
-          .send("service_d29d1gm", "template_ke2jzns", {
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            phone: document.getElementById("phone").value,
-            location: document.getElementById("location").value,
-            feedback: document.getElementById("feedback").value,
-          })
-          .then(
-            function (response) {
-              alert("Email sent successfully!");
-            },
-            function (error) {
-              alert("Error sending email: " + error);
-            }
-          );
-      });
     </script>
     <script src="../js/main.js"></script>
     <!-- import fontawesome lib -->
     <script src="../js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/emailjs-com.min.js"></script>
-    
   </body>
 </html>

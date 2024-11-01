@@ -6,7 +6,6 @@
     <title>اسئلة شائعة</title>
     <!-- Css Files -->
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/quastion-style.css" />
     <!-- import fontawesome lib -->
     <link rel="stylesheet" href="../css/all.min.css" />
     <!-- import google font -->
@@ -17,7 +16,7 @@
       rel="stylesheet"
     />
   </head>
-  <body dir="rtl">
+  <body>
     <!-----------------
     Start Header-Navbar 
     ------------------->
@@ -55,10 +54,10 @@
               <a class="navbar-link" href="contact.html">تواصل معنا</a>
             </li>
 
-            <a href="">
-              English
+            <span class="translator">
+              <p>English</p>
               <i class="fa-solid fa-language"></i>
-            </a>
+            </span>
           </ul>
         </div>
       </nav>
@@ -70,6 +69,13 @@
     Start FAQ 
     ---------------->
     <div class="main-title">
+      <div class="img">
+          <img
+            src="../vecteezy_abstract-gradient-golden-background-brush-stroke-place-for_34056372.png"
+            alt=""
+            srcset=""
+          />
+        </div>
       <h2>الاسئلة الشائعة</h2>
     </div>
     <section class="faq">
@@ -133,10 +139,10 @@
             <h3>روابط سريعة</h3>
             <div class="text">
               <ul class="footer-links">
-                <li><a href="../index.html">الرئيسية</a></li>
-                <li><a href="../html/about.html">من نحن؟</a></li>
-                <li><a href="../html/quastion.html">اسئلة شائعة</a></li>
-                <li><a href="../html/contact.html">تواصل معنا</a></li>
+                <li><a href="shikh.html">اقوال الشيوخ</a></li>
+                <li><a href="proverbs.html">امثال السنع</a></li>
+                <li><a href="images.html">مكتبة الصور</a></li>
+                <li><a href="videos.html">مكتبة الفيديوهات</a></li>
               </ul>
             </div>
           </div>
@@ -217,6 +223,6 @@
       );
       navbarMenu.addEventListener("click", toggleNavbarVisibility);
     </script>
-    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/main.js"></script>
   </body>
 </html>
