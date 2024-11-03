@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <!-- import fontawesome lib -->
     <link rel="stylesheet" href="../css/all.min.css" />
-     <!-- import swiper lib -->
+    <!-- import swiper lib -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -27,9 +27,8 @@
     ------------------->
     <header id="navbar">
       <nav class="navbar-container container">
-        <a href="../index.html" class="home-link">
-          <div class="navbar-logo"></div>
-          <h1>جامعة العين</h1>
+        <a href="../index.html" class="home-link logo">
+          <img src="../logo.png" alt="" srcset="" />
         </a>
         <button
           type="button"
@@ -51,14 +50,10 @@
               <a class="navbar-link" href="about.html">من نحن</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" href="quastion.html"
-                >الاسئلة الشائعة</a
-              >
+              <a class="navbar-link" href="quastion.html">الاسئلة الشائعة</a>
             </li>
             <li class="navbar-item">
-              <a class="navbar-link" href="contact.html"
-                >تواصل معنا</a
-              >
+              <a class="navbar-link" href="contact.html">تواصل معنا</a>
             </li>
 
             <span class="translator">
@@ -128,7 +123,7 @@
     <div class="videos-content">
       <div class="container">
         <div class="boxs">
-          <a href="video-details.html" class="box">
+          <div class="box">
             <div class="box-img">
               <iframe
                 width="100%"
@@ -147,12 +142,17 @@
               </div>
               <div class="like">
                 0
-                <i class="fa-solid fa-thumbs-up"></i>
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
               </div>
             </div>
-            <div class="description">السنع في المجالس</div>
-          </a>
-          <a href="video-details.html" class="box">
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
+          <div class="box">
             <div class="box-img">
               <iframe
                 width="100%"
@@ -171,12 +171,17 @@
               </div>
               <div class="like">
                 0
-                <i class="fa-solid fa-thumbs-up"></i>
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
               </div>
             </div>
-            <div class="description">السنع في المجالس</div>
-          </a>
-          <a href="video-details.html" class="box">
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
+          <div class="box">
             <div class="box-img">
               <iframe
                 width="100%"
@@ -195,12 +200,17 @@
               </div>
               <div class="like">
                 0
-                <i class="fa-solid fa-thumbs-up"></i>
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
               </div>
             </div>
-            <div class="description">السنع في المجالس</div>
-          </a>
-          <a href="video-details.html" class="box">
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
+          <div class="box">
             <div class="box-img">
               <iframe
                 width="100%"
@@ -219,12 +229,17 @@
               </div>
               <div class="like">
                 0
-                <i class="fa-solid fa-thumbs-up"></i>
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
               </div>
             </div>
-            <div class="description">السنع في المجالس</div>
-          </a>
-          <a href="video-details.html" class="box">
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
+          <div class="box">
             <div class="box-img">
               <iframe
                 width="100%"
@@ -243,12 +258,17 @@
               </div>
               <div class="like">
                 0
-                <i class="fa-solid fa-thumbs-up"></i>
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
               </div>
             </div>
-            <div class="description">السنع في المجالس</div>
-          </a>
-          <a href="video-details.html" class="box">
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
+          <div class="box">
             <div class="box-img">
               <iframe
                 width="100%"
@@ -267,11 +287,190 @@
               </div>
               <div class="like">
                 0
-                <i class="fa-solid fa-thumbs-up"></i>
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
               </div>
             </div>
-            <div class="description">السنع في المجالس</div>
-          </a>
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/DAIsJKDIOCE?si=1vbUfpCTw8ANErkf"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+            <div class="info">
+              <div class="views">
+                0
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <div class="like">
+                0
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
+              </div>
+            </div>
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/DAIsJKDIOCE?si=1vbUfpCTw8ANErkf"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+            <div class="info">
+              <div class="views">
+                0
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <div class="like">
+                0
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
+              </div>
+            </div>
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/DAIsJKDIOCE?si=1vbUfpCTw8ANErkf"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+            <div class="info">
+              <div class="views">
+                0
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <div class="like">
+                0
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
+              </div>
+            </div>
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/DAIsJKDIOCE?si=1vbUfpCTw8ANErkf"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+            <div class="info">
+              <div class="views">
+                0
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <div class="like">
+                0
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
+              </div>
+            </div>
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/DAIsJKDIOCE?si=1vbUfpCTw8ANErkf"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+            <div class="info">
+              <div class="views">
+                0
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <div class="like">
+                0
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
+              </div>
+            </div>
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
+          <div class="box">
+            <div class="box-img">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/DAIsJKDIOCE?si=1vbUfpCTw8ANErkf"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+            <div class="info">
+              <div class="views">
+                0
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <div class="like">
+                0
+                <i
+                  class="fa-solid fa-thumbs-up btn-like"
+                  onclick="clicked(event)"
+                ></i>
+              </div>
+            </div>
+            <a href="video-details.html" class="description"
+              >السنع في المجالس</a
+            >
+          </div>
         </div>
       </div>
     </div>
