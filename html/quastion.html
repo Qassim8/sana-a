@@ -6,6 +6,8 @@
     <title>اسئلة شائعة</title>
     <!-- Css Files -->
     <link rel="stylesheet" href="../css/style.css" />
+    <!-- import animate lib -->
+    <link rel="stylesheet" href="../css/animate.css" />
     <!-- import fontawesome lib -->
     <link rel="stylesheet" href="../css/all.min.css" />
     <!-- import google font -->
@@ -20,10 +22,10 @@
     <!-----------------
     Start Header-Navbar 
     ------------------->
-    <header id="navbar">
+    <header id="navbar" class="wow animate__animated animate__bounceInDown">
       <nav class="navbar-container container">
         <a href="../index.html" class="home-link logo">
-          <img src="../logo.png" alt="" srcset="">
+          <img src="../logo.png" alt="" srcset="" />
         </a>
         <button
           type="button"
@@ -67,51 +69,126 @@
     <!---------------
     Start FAQ 
     ---------------->
-    <div class="main-title">
+    <div class="main-title wow animate__animated animate__bounceInUp">
       <div class="img">
-          <img
-            src="../vecteezy_abstract-gradient-golden-background-brush-stroke-place-for_34056372.png"
-            alt=""
-            srcset=""
-          />
-        </div>
+        <img
+          src="../vecteezy_abstract-gradient-golden-background-brush-stroke-place-for_34056372.png"
+          alt=""
+          srcset=""
+        />
+      </div>
       <h2>الاسئلة الشائعة</h2>
     </div>
     <section class="faq">
       <div class="container">
         <div class="content">
-          <div class="row">
+          <div class="row wow animate__animated animate__bounceInRight">
             <div>
-              <h3>ما هو السنع؟</h3>
-              <span class="first-q">-</span>
+              <h3>ما هو السنع الإماراتي؟</h3>
+              <span onclick="toggleHandler(event)">-</span>
             </div>
-            <p class="q1">
-              السنع هو مجموعة من القواعد والسلوكيات التي تعكس الاحترام والأدب في
-              التعامل مع الآخرين. يتضمن السنع احترام الآخرين وتقديم النية الحسنة
-              والاهتمام بالعادات والتقاليد المحلية
+            <p class="">
+              مجمع للأقوال والأفعال التي من الواجب الالتزام بها في المواقف
+              الاجتماعية اليومية أو المناسبات أو الزيارات أو حضور المجالس.
             </p>
           </div>
-          <div class="row">
+          <div class="row wow animate__animated animate__bounceInLeft">
             <div>
-              <h3>ما هي أهمية السنع في الحياة اليومية؟</h3>
-              <span class="second-q">+</span>
+              <h3>لماذا يعتبر السنع مهماً؟</h3>
+              <span onclick="toggleHandler(event)">+</span>
             </div>
-            <p class="q2 hide">
-              السنع يساعد في بناء علاقات إيجابية ومستدامة بين الناس. يعزز السنع
-              التفاهم والاحترام المتبادل ويقلل من الصراعات وسوء الفهم. كما يسهم
-              في تعزيز سمعة الفرد والمجتمع.
+            <p class="hide">
+              يعتبر السنع مهمًا لأنه يعزز من الروابط الاجتماعية ويعكس القيم
+              الإيجابية التي تساهم في بناء مجتمع متماسك ومستدام.
             </p>
           </div>
-          <div class="row">
+          <div class="row wow animate__animated animate__bounceInRight">
             <div>
-              <h3>ما هي الأنشطة التي تساعد في تحسين السنع؟</h3>
-              <span class="third-q">+</span>
+              <h3>كيف يمكنني تعلم المزيد عن السنع الإماراتي؟</h3>
+              <span onclick="toggleHandler(event)">+</span>
             </div>
-            <p class="q3 hide">
-              لأنشطة التي تساعد في تحسين السنع تشمل المشاركة في الأعمال التطوعية
-              والخيرية، والتفاعل مع الثقافات المختلفة، وتعلم فنون التواصل
-              والاستماع الجيد. كما يمكن أن تساعد القراءة والتعلم المستمر في
-              تعزيز السنع.
+            <p class="hide">
+              يمكنك زيارة موقعنا ومشاهدة الفيديوهات التعليمية والموارد المتاحة،
+              بالإضافة إلى المشاركة في ورش العمل والفعاليات التي نقوم بتنظيمها.
+            </p>
+          </div>
+          <div class="row wow animate__animated animate__bounceInLeft">
+            <div>
+              <h3>كيف يمكنني المساهمة في نشر السنع الإماراتي؟</h3>
+              <span onclick="toggleHandler(event)">+</span>
+            </div>
+            <p class="hide">
+              يمكنك المساهمة من خلال المشاركة في الفعاليات، مشاركة المعلومات على
+              وسائل التواصل الاجتماعي، أو حتى من خلال تنظيم أحداث محلية تسلط
+              الضوء على السنع.
+            </p>
+          </div>
+          <div class="row wow animate__animated animate__bounceInRight">
+            <div>
+              <h3>هل يمكنني التواصل معكم إذا كان لدي سؤال آخر؟</h3>
+              <span onclick="toggleHandler(event)">+</span>
+            </div>
+            <p class="hide">
+              بالطبع! يمكنك التواصل معنا من خلال صفحة الاتصال على موقعنا، وسنكون
+              سعيدين بالرد على أي استفسارات لديك.
+            </p>
+          </div>
+          <div class="row wow animate__animated animate__bounceInLeft">
+            <div>
+              <h3>ماهو دور السنع في تعزيز الهوية الثقافية؟</h3>
+              <span onclick="toggleHandler(event)">+</span>
+            </div>
+            <p class="hide">
+              يلعب السنع دوراً جوهرياً في تعزيز الهوية الثقافية لأنه يجسد القيم
+              والمبادئ الاجتماعية التي تميز المجتمع الخليجي، ويسهم في نقل هذه
+              القيم عبر الأجيال، مما يساعد في الحفاظ على التراث الثقافي
+              والاعتزاز به.
+            </p>
+          </div>
+          <div class="row wow animate__animated animate__bounceInRight">
+            <div>
+              <h3>
+                هل هناك منشورات تعليمية يمكن تزويدنا بها لمعرفة المزيد عن السنع
+                الاماراتي ؟
+              </h3>
+              <span onclick="toggleHandler(event)">+</span>
+            </div>
+            <p class="hide">
+              نعم لدينا منشورات الكترونية يمكننا تزويدكم بها عن السنع الاماراتي.
+            </p>
+          </div>
+          <div class="row wow animate__animated animate__bounceInLeft">
+            <div>
+              <h3>
+                كيف يساهم ما تسعون له في تعريف الجيل الحالي بالسنع الاماراتي ؟
+              </h3>
+              <span onclick="toggleHandler(event)">+</span>
+            </div>
+            <p class="hide">
+              رفع مستوى الوعي لدينا الجيل الحالي بالسنع الاماراتي، احاطتهم بكل
+              ما هو مطلوب عن السنع الاماراتي.
+            </p>
+          </div>
+          <div class="row wow animate__animated animate__bounceInRight">
+            <div>
+              <h3>ما الفرق بين السنع والعادات اليومية؟</h3>
+              <span onclick="toggleHandler(event)">+</span>
+            </div>
+            <p class="hide">
+              السنع يتعلق بالأدب والأخلاق المتعارف عليها في المجتمع ويهدف لإظهار
+              الاحترام والرقي، بينما العادات اليومية هي سلوكيات شخصية وروتينية
+              ولا تتطلب بالضرورة خلفية أخلاقية أو اجتماعية معينة.
+            </p>
+          </div>
+          <div class="row wow animate__animated animate__bounceInLeft">
+            <div>
+              <h3>كيف يظهر السنع في التعامل مع كبار السن؟</h3>
+              <span onclick="toggleHandler(event)">+</span>
+            </div>
+            <p class="hide">
+              لسنع يظهر بشكل واضح في كيفية تعاملنا مع كبار السن، حيث يتجلى في
+              احترامنا وتقديرنا لهم، واتباعنا للآداب التي تعبّر عن مكانتهم
+              وفضلهم.
             </p>
           </div>
         </div>
@@ -170,7 +247,7 @@
     <!--------
     End Footer 
     --------->
-    <script>
+    <!-- <script>
       const qOne = document.querySelector(".first-q"),
         qTow = document.querySelector(".second-q"),
         qThree = document.querySelector(".third-q");
@@ -203,7 +280,6 @@
         }
       };
 
-      
       const navbarToggler = navbar.querySelector("#navbar-toggle");
       const navbarMenu = document.querySelector("#navbar-menu");
       const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
@@ -221,6 +297,11 @@
         e.stopPropagation()
       );
       navbarMenu.addEventListener("click", toggleNavbarVisibility);
+    </script> -->
+    <!-- import wow.js lib -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
     </script>
     <script src="../js/main.js"></script>
   </body>

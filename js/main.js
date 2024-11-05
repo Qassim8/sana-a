@@ -13,6 +13,18 @@ function clicked(e) {
   }
 }
 
+// FAQ Show And Hide
+function toggleHandler(e) {
+  const parent = e.target.parentElement;
+  console.log(parent.nextElementSibling.classList.contains("hide"));
+  parent.nextElementSibling.classList.toggle("block" ? "hide" : "block");
+  if (parent.nextElementSibling.classList.contains("hide")) {
+    e.target.innerHTML = "+";
+  } else if (parent.nextElementSibling.classList.contains("block")) {
+    e.target.innerHTML = "-";
+  }
+}
+
 // ***********************************************************************
 
 document.addEventListener("DOMContentLoaded", function () {
