@@ -950,3 +950,47 @@ form .form-btn:hover {
     color: rgb(56, 85, 228);
   }
 }
+
+/* Start Video Player */
+.vjs-theme-fantasy .vjs-control-bar {
+  background-color: #333 !important; /* غيّر لون شريط التحكم */
+}
+
+.vjs-theme-fantasy .vjs-play-control {
+  color: #ecdab8 !important; /* غيّر لون زر التشغيل */
+}
+
+.vjs-theme-fantasy .vjs-progress-holder {
+  background: #444 !important; /* غيّر لون خلفية شريط التقدم */
+}
+
+.vjs-theme-fantasy .vjs-play-progress {
+  background: #ecdab8 !important; /* غيّر لون شريط التقدم */
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  background-color: rgb(201, 196, 169);
+  color: white;
+  padding: 10px !important;
+  font-size: 35px !important;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:hover:before {
+  background-color: #333;
+  color: #ecdab8;
+}
+.vjs-youtube .vjs-poster::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(238, 238, 238, .0), rgba(130, 130, 130, 0.46));
+}
+/* End Video Player */

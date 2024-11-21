@@ -15,6 +15,17 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- import video.js lib & theme -->
+    <!-- Video.js base CSS -->
+    <link
+      href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fantasy Theme -->
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-----------------
@@ -68,15 +79,14 @@
     <div class="details">
       <div class="container">
         <div class="image">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/DAIsJKDIOCE?si=1vbUfpCTw8ANErkf"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-          ></iframe>
+          <video
+            id="my-video"
+            class="video-js vjs-theme-fantasy"
+            controls
+            width="640"
+            height="264"
+            data-setup='{"techOrder": ["youtube"], "sources": [{"type": "video/youtube", "src": "https://www.youtube.com/embed/DAIsJKDIOCE?si=1vbUfpCTw8ANErkf"}]}'
+          ></video>
         </div>
         <div class="info">
           <div class="views">
@@ -180,5 +190,8 @@
     <script src="../js/main.js"></script>
     <!-- import fontawesome lib -->
     <script src="../js/all.min.js"></script>
+    <!-- import video.js lib -->
+    <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"></script>
   </body>
 </html>
